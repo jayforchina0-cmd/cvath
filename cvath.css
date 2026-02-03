@@ -1,0 +1,88 @@
+#cvath-panel {
+  position: fixed;
+  top: 90px;
+  right: 40px;
+  width: 330px;
+  background: #0e1117;
+  color: #e5e7eb;
+  border-radius: 12px;
+  z-index: 999999;
+  font-family: Inter, system-ui, sans-serif;
+  box-shadow: 0 10px 30px rgba(0,0,0,.6);
+  resize: both;
+  overflow: auto;
+}
+
+#cvath-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  cursor: move;
+  background: #161b22;
+  border-radius: 12px 12px 0 0;
+  font-weight: 600;
+}
+
+#cvath-close {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#cvath-body {
+  padding: 12px;
+}
+
+#cvath-body input {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #2a2f3a;
+  background: #0b0e13;
+  color: #fff;
+}
+
+#cvath-run {
+  width: 100%;
+  padding: 8px;
+  background: #2563eb;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.modes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.modes button {
+  flex: 1;
+  margin: 0 2px;
+  padding: 6px;
+  background: #1f2937;
+  border: none;
+  color: #bbb;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.modes button.active {
+  background: #374151;
+  color: #fff;
+}
+
+#cvath-output {
+  margin-top: 10px;
+  font-family: Consolas, monospace;
+  font-size: 12px;
+  white-space: pre-wrap;
+}
